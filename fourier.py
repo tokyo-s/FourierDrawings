@@ -113,8 +113,16 @@ def calculate_fourier_for_path(form,paths, count, canvas_width, canvas_height):
     print("y - ",miny,' ',maxy)
     # form.canvas_width.data = (maxx-minx)/10
     # form.canvas_height.data = (maxy-miny)/10
-    canvas_width = (maxx-minx)/10
-    canvas_height = (maxy-miny)/10
+
+    if (maxx-minx)<(maxy-miny):
+        canvas_width = (maxx-minx)/((maxy-miny)/1450)  #################
+        canvas_height = (maxy-miny)/((maxy-miny)/1450) ##########
+    else:
+        canvas_width = (maxx-minx)/((maxx-minx)/1450)  #################
+        canvas_height = (maxy-miny)/((maxx-minx)/1450) ##########
+    # print('########################################################################################3')
+    # print(canvas_width,canvas_height)
+    # print('########################################################################################3')
     for i,path in enumerate(paths):
         #path = path.rotated(180)
         #print(path.getBoundig)
@@ -128,7 +136,7 @@ def calculate_fourier_for_path(form,paths, count, canvas_width, canvas_height):
         print("ymin = ",ymin)
         widthpercent=width/(maxx-minx)
         heightpercent = height/(maxy-miny)
-        path = scale_svg(path,widthpercent*canvas_width,heightpercent*canvas_height)
+        path = scale_svg(path,widthpercent*canvas_width,heightpercent*canvas_height) # path = scale_svg(path,widthpercent*canvas_width,heightpercent*canvas_height)
         
         #path = path.translated()#+xmin/(maxx-minx)*canvas_width+ymin/(maxy-miny)*canvas_height*1j
         
@@ -140,7 +148,7 @@ def calculate_fourier_for_path(form,paths, count, canvas_width, canvas_height):
         def _func(x, n):
             return np.exp(-n * 2 * np.pi * x * 1j) * _get_path_point(x)
 
-        result.append({'speed': 0, 'C': complex_integrate(_func, 0)+(xmin)/(maxx-minx)*canvas_width+(ymin)/(maxy-miny)*canvas_height*1j+1500*1j})#+xmin/maxx*canvas_width+ymin/(maxy/canvas_height)*1j
+        result.append({'speed': 0, 'C': complex_integrate(_func, 0)+(xmin)/(maxx-minx)*canvas_width+(ymin+(1500-canvas_height))/(maxy-miny)*canvas_height*1j+1500*1j})#+xmin/maxx*canvas_width+ymin/(maxy/canvas_height)*1j
         for i in range(1, count):
             result.append({'speed': i, 'C': complex_integrate(_func, i)})
             result.append({'speed': -i, 'C': complex_integrate(_func, -i)})

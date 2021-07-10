@@ -7,8 +7,9 @@ Fourier
     <div class="jumbotron">
         <h1>Fourier</h1>
     </div>
+    <!-- .svg -->
     <form class="card p-2" enctype="multipart/form-data" id=svg_form method=post oninput="number_of_circles_output.value = number_of_circles.valueAsNumber">
-        {{ form.svg_file(id="svg_file", accept=".svg", type="file", class="form-control",
+        {{ form.svg_file(id="svg_file", accept="image/*", type="file", class="form-control",  
         placeholder=form.svg_file.label.text) }}
         <div class="range-output">
             {{ form.number_of_circles.label }}
@@ -28,6 +29,7 @@ Fourier
         <input id="auto_plot" type="checkbox">
         {{ form.hidden_tag() }}
     </form>
+
     <canvas id="fourier_canvas"></canvas>
     <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey"></svg>
 
@@ -45,6 +47,23 @@ Fourier
             let formData = new FormData($(this)[0]);
             let file = $("#svg_file")[0].files[0];
             console.log($("#svg_file")[0].files[0])
+
+            const context = canvas.getContext('2d');
+            console.log(canvas)
+            console.log(context)
+            console.log(canvas.width)
+            console.log(canvas.height)
+            context.beginPath();
+            context.fillStyle = "rgba(255, 255, 255, 255)";
+            context.fillRect(0, 0, canvas.width, canvas.height);    
+            context.stroke();
+            console.log('Cleaned');
+            /////
+            // let convertApi = ConvertApi.auth({secret: 'liimC4FVhKbOdrKc'})
+            // let params = convertApi.createParams()
+            // params.add('File', file);
+            // let file = await convertApi.convert('jpg', 'svg', params)
+            /////
             //var svgWidth = file.getAttribute('width');
             // var svgWidth = parseFloat(file.getAttributeNS(null, "width"));
             // var svgHeight = parseFloat(file.getAttributeNS(null, "height"));
@@ -91,7 +110,7 @@ Fourier
     function fitToContainer(canvas) {
         // Make it visually fill the positioned parent
         canvas.style.width = '1500px';
-        canvas.style.height = '1500px';
+        canvas.style.height = '1650px';
         // ...then set the internal size to match
         canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
