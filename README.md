@@ -25,7 +25,9 @@ Contact me for more info
   <img src="https://princessovna.ru/wp-content/uploads/2020/02/word-image-1.png" width="450" height="400" title="hover text">
   <img src="https://sun9-55.userapi.com/impf/xi8hleaV6aj3ega5oZ6dZiBDveJNx0xSiG02lA/VPB2jv6trCA.jpg?size=424x700&quality=96&sign=20e643cd766cae2086ee05d2ce3f74a4&type=album" width="350" height="500" alt="accessibility text">
 </p>
+
+
   ![alt text](https://github.com/tokyo-s/FourierDrawings/tree/master/examples_svg/01-icons_616941488.svg?raw=true)
-  ![alt text](https://github.com/tokyo-s/FourierDrawings/tree/master/outputs/1.png?raw=true)
+  ![1](https://github.com/tokyo-s/FourierDrawings/tree/master/outputs/1.png?raw=true)
   ![alt text](https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/119491-linear-candies-and-sweets.svg)
   ![alt text](https://github.com/tokyo-s/FourierDrawings/tree/master/outputs/2.png?raw=true)
