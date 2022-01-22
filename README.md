@@ -28,10 +28,4 @@ Contact me for more info
   <img src="https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/2.png" width="550" height="400" alt="accessibility text">
     <img src="https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/119491-linear-candies-and-sweets.svg" width="450" height="400" title="hover text">
   <img src="https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/1.png" width="550" height="400" alt="accessibility text">
-  
 </p>
-
-  
-  ![alt text](https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/119491-linear-candies-and-sweets.svg)
-  
-  ![2](https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/1.png)
