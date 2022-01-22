@@ -27,7 +27,7 @@ Contact me for more info
 </p>
 
 
-  ![alt text](https://github.com/tokyo-s/FourierDrawings/tree/master/examples_svg/01-icons_616941488.svg)
+  ![alt text](https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/01-icons_616941488.svg)
   
   ![1](https://github.com/tokyo-s/FourierDrawings/tree/master/outputs/1.png)
   
