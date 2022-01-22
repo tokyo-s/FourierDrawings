@@ -17,7 +17,8 @@ I was very excited when i firstly found out about this Series, and i thought, wh
 What I mean is that usually an image consist not only of one path, but of many different paths, so I thought it would be great to try copy the same image, but be created by pure math, and simple rotation.
 So this are some example on what is my finall result.
 
-There the image consist of a lot of "arrows" that draw different part of image
+There the image consist of a lot of "arrows" that draw different part of image<br>
+Contact me for more info
 
 
 <p align="center">
