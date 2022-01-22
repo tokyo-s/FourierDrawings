@@ -29,8 +29,8 @@ Contact me for more info
 
   ![alt text](https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/01-icons_616941488.svg)
   
-  ![1](https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/1.png)
+  ![1](https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/2.png)
   
   ![alt text](https://github.com/tokyo-s/FourierDrawings/blob/master/examples_svg/119491-linear-candies-and-sweets.svg)
   
-  ![2](https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/2.png)
+  ![2](https://github.com/tokyo-s/FourierDrawings/blob/master/outputs/1.png)
