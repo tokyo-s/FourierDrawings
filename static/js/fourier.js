@@ -55,6 +55,10 @@ let flag = false;
 function init_fourier(canvas_elm, constants, count) {
     canvas = canvas_elm;
     context = canvas.getContext('2d');
+    context.beginPath();
+    context.fillStyle = "rgba(255, 255, 255, 255)";
+    context.fillRect(0, 0, canvas.width, canvas.height);    
+    context.stroke();
     if(flag==false){
         context.transform(1, 0, 0, -1, 0, canvas.height);
         flag=true;
@@ -69,7 +73,7 @@ function init_fourier(canvas_elm, constants, count) {
     for(let i=0;i<nr_of_paths;i++){
         wave.push([]);
     } 
-    console.log("lenght const"+ constants.length)
+    //console.log("lenght const"+ constants.length)
 
     for (let i = 0; i < constants.length; i++) {
         let constant = constants[i];
@@ -131,8 +135,8 @@ function draw() {
     for(let j=0;j<nr_of_paths;j++){
         count = 2*n*j-1*j;
         if(j==0)count=0;
-        console.log("count for "+j+" count = "+count)
-        console.log(nr_of_paths)
+        //console.log("count for "+j+" count = "+count)
+        //console.log(nr_of_paths)
         var new_center = circles[count].nextCenter(center);
         for(let i = 1; i < n; i++) {
             circles[i+count].draw(context, new_center);
