@@ -6,3 +6,6 @@ matplotlib
 numpy
 scipy
 svgpathtools
+svgutils
+gunicorn
+itsdangerous==2.0.1
